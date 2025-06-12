@@ -1,0 +1,58 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main() {
+    int num1, num2, num3; 
+    int x;                
+    int somma;            
+
+   
+    printf("Inserisci numero 1/3: ");
+    scanf("%d", &num1);
+
+    printf("Inserisci numero 2/3: ");
+    scanf("%d", &num2);
+
+    printf("Inserisci numero 3/3: ");
+    scanf("%d", &num3);
+
+    printf("Dai un valore numerico a x: ");
+    scanf("%d", &x);
+
+    somma = num1 + num2 + num3;
+
+    printf("\nLa somma dei numeri inseriti è: %d\n", somma);
+
+    if (somma > x) {
+        printf("La somma dei numeri inseriti (%d) è maggiore di x (%d).\n", somma, x);
+    } else {
+        printf("La somma dei numeri inseriti (%d) è minore o uguale a x (%d).\n", somma, x);
+    }
+
+    if (num1 < 0 || num2 < 0 || num3 < 0) {
+        printf("ATTENZIONE! Uno dei numeri inseriti è negativo.\n");
+    } else {
+        printf("ATTENZIONE! Nessuno dei numeri inseriti è negativo.\n");
+    }
+
+    if (num1 != 0 && num2 != 0 && num3 != 0) {
+        printf("ATTENZIONE! tutti e tre i numeri sono diversi da zero.\n");
+    } else {
+        printf("ATTENZIONE! uno dei numeri è uguale a zero.\n");
+    }
+
+    if (num1 != 100 && num2 != 100 && num3 != 100) {
+        printf("ATTENZIONE! nessuno dei numeri è uguale a 100.\n");
+    } else {
+        printf("ATTENZIONE! uno dei numeri è uguale a 100.\n");
+    }
+
+    return 0; 
+}
