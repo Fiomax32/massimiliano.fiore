@@ -1,0 +1,56 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main() {
+  int num1, num2;
+
+  printf("Inserisci numero intero 1/2: ");
+  scanf("%d", &num1);
+
+  printf("Inserisci numero intero 2/2: ");
+  scanf("%d", &num2);
+
+  int somma = num1 + num2;
+  printf("La somma: %d\n", somma);
+
+  int differenza = num1 - num2;
+  printf("La Differenza: %d\n", differenza);
+
+  int prodotto = num1 * num2;
+  printf("Il prodotto: %d\n", prodotto);
+
+  if (num2 != 0) {
+    int quoziente = num1 / num2;
+    printf("il quoziente: %d\n", quoziente);
+  } else {
+    printf("Non si deve mai dividere per 0.\n");
+    
+  }
+  
+  if (num2 != 0) {
+    int resto = num1 % num2;
+    printf("Il resto della divisione è: %d\n", resto);
+  } else {
+    printf("ATTENZIONE!! hai diviso per zero\n");
+  }
+
+  if (num1 > 0 && num2 > 0) {
+    printf("I numeri sono entrambi maggiori di zero.\n");
+  } else {
+    printf("I numeri non soono entrambi maggiori di zero.\n");
+  }
+
+  if (num1 % 2 == 0 || num2 % 2 == 0) {
+    printf("Un numero è pari.\n");
+  } else {
+    printf("Nessuno numero è pari.\n");
+  }
+
+  return 0;
+}
