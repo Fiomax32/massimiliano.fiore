@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+int num1, num2;
+int *ptr1, *ptr2;
+        printf("INSERIRE NUMERO 1/2: ");
+        scanf("%d", &num1);
+        printf("INSERIRE NUMERO 2/2: ");
+        scanf("%d", &num2);
+ptr1 = &num1;
+ptr2 = &num2;
+        printf("NUMERO PRIMA SI SCAMBIARLO: num1 = %d, num2 = %d\n", *ptr1, *ptr2);
+int temp = *ptr1;
+    *ptr1 = *ptr2;
+    *ptr2 = temp;
+         printf("nUMERO DOPO AVERLO SCAMBIATO: num1 = %d, num2 = %d\n", *ptr1, *ptr2);
+int somma = *ptr1 + *ptr2;
+         printf("SOMMA DEI 2 NUMERI: %d\n", somma);
+int maggiore;
+    if (*ptr1 > *ptr2) {
+maggiore = *ptr1;
+    } else {
+maggiore = *ptr2;
+    }
+        printf("NUMERO MAGGIORE TRA QUELLI INSERITI: %d\n", maggiore);
+return 0;
+}
