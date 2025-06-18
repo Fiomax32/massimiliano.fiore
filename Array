@@ -1,0 +1,33 @@
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main() {
+    int n, i, somma = 0;
+    int numeri[100];
+    printf("Quanti numeri vuoi inserire (massimo 100)? ");
+    scanf("%d", &n);
+    if (n <= 0 || n > 100) {
+        printf("Numero di elementi non valido.\n");
+        return 1;
+    }
+    printf("Inserisci %d numeri:\n", n);
+    for (i = 0; i < n; i++) {
+        printf("Elemento %d: ", i + 1);
+        scanf("%d", &numeri[i]);
+    }
+    for (i = 0; i < n; i++) {
+        somma += numeri[i];
+    }
+    printf("La somma degli elementi inseriti e': %d\n", somma);
+    return 0;
+}
+
+
+
+
